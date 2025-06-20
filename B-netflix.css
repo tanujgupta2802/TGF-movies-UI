@@ -3,11 +3,18 @@
   padding: 0px;
   box-sizing: border-box;
 }
-body,
 html {
-  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   overflow-x: hidden;
   font-family: "Helvetica Neue", Arial, sans-serif;
+  position: relative;
+  min-height: 100vh;
 }
 
 /* Main background section */

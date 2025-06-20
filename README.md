@@ -14,8 +14,15 @@ It’s a simple front-end project that mimics the look and feel of the original 
 ---
 
 ## 📱 Responsive Design
-This clone is mostly responsive, and adapts well across most screen sizes.
-Some parts (like dropdowns or image sections) are still being tweaked for full mobile optimization. 📱🔧
+
+This clone is **fully responsive** and adjusts beautifully across:
+
+- 📱 Mobile Devices  
+- 💻 Tablets  
+- 🖥️ Desktops
+
+All sections — including the navbar, hero text, buttons, trending images, and FAQs — scale properly for different screen sizes.
+
 ---
 
 ## 💡 Features
@@ -33,7 +40,7 @@ Some parts (like dropdowns or image sections) are still being tweaked for full m
 
 ## 🚀 Live Demo
 
-👉 **Check out the live site here:** [Your Netlify Link Here](https://your-netlify-site.netlify.app)
+👉 **Check out the live site here:** [Your Netlify Link Here](https://tg369-u-i.netlify.app/)
 
 ---
 

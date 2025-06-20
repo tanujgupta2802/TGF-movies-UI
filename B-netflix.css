@@ -1,0 +1,765 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Main background section */
+.main {
+  background-image: url("netflixbg.jpg"); /* Replace with your background */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+/* Dark overlay to match Netflix's effect 
+In your case, ::before is used to create a dark overlay effect on top of the background image but behind the content.*/
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.65); Dark overlay */
+  background-color: rgba(0, 0, 0, 0.733);
+  z-index: 1;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  z-index: 2; /* Ensure it stays above the background */
+}
+.navbar img {
+  color: red;
+  height: 40px;
+  width: 148px;
+  margin-top: 12px;
+  margin-left: 80px;
+}
+#btn-lang,
+.btn-sign {
+  font-weight: 550;
+  color: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  background: transparent;
+}
+.gap {
+  margin-right: 8px;
+}
+.btn-sign {
+  border: none;
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px 16px;
+  text-align: center;
+}
+.btn-sign:hover {
+  cursor: pointer;
+  background-color: rgba(249, 62, 29, 0.717);
+}
+#btn-lang {
+  width: 130px;
+  border-radius: 3px;
+  padding: 5px 25px;
+  margin-right: 10px;
+  /* font-weight: bold; */
+  text-align: center;
+}
+.box {
+  margin-top: 10px;
+  margin-right: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.opt {
+  color: black;
+}
+.hero {
+  color: white;
+  font-size: 42px;
+  font-weight: 2000;
+  text-align: center;
+  margin-top: 155px;
+  z-index: 1;
+}
+.heading1 {
+  margin-bottom: -60px;
+}
+.heading2 {
+  margin-bottom: -54px;
+}
+.para {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.para2 {
+  margin-top: 9px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: -35px;
+}
+.em-btn {
+  display: flex;
+  margin-top: 55px;
+}
+#input {
+  color: inherit;
+  font-style: normal;
+  font-size: 16px;
+  width: 322px;
+  margin-left: 374px;
+  margin-right: 10px;
+  background: transparent;
+  /* border: 1px solid rgb(179, 177, 177); */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: rgba(0, 0, 0, 0.374);
+}
+#input::placeholder {
+  color: rgb(179, 177, 177);
+  /* color: rgb(169, 168, 168); */
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 600;
+}
+#st-btn {
+  width: 175px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e5e5e5;
+  background-color: red;
+}
+.g-st {
+  margin-right: 4px;
+}
+.container-fluid {
+  height: 2310px;
+  background-color: rgba(0, 0, 0, 0.952);
+}
+.curve {
+  width: 100%;
+  margin-top: -8px;
+}
+.cont-hd {
+  font-size: 24px;
+  color: white;
+  z-index: 1;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+#trend-select {
+  color: white;
+  width: 100px;
+  border-radius: 3px;
+  padding: 5px 25px 5px 8px;
+  margin-left: 50px;
+  background: transparent;
+}
+#trend-sel {
+  color: white;
+  width: 100px;
+  margin-left: -40px;
+  border-radius: 3px;
+  padding: 5px 25px 5px 8px;
+  background: transparent;
+}
+.gap2 {
+  margin-right: 15px;
+}
+.img-col {
+  height: 200px;
+  width: 160px;
+  border-radius: 10px;
+}
+.img-col:hover {
+  cursor: pointer;
+  height: 210px;
+  width: 170px;
+}
+#right-arr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  color: white;
+  background-color: #ffffff1a;
+  width: 40px;
+  height: 120px;
+  border-radius: 12px;
+}
+#right-arr:hover {
+  background-color: #ffffff56;
+  cursor: pointer;
+}
+#ri-array {
+  font-size: 26px;
+}
+.tr {
+  margin-top: -35px;
+}
+#more-hd {
+  margin-top: 60px;
+  position: absolute;
+}
+#bx1,
+#bx2 {
+  /* border: 1px solid white; */
+  border-radius: 12px;
+  background-image: url("purback.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  margin: 0 6px;
+  width: 550px;
+  height: 200px;
+  color: white;
+}
+#reason {
+  margin-bottom: 100px;
+}
+#box-container {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+#box-container2 {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+#box-container {
+  margin-bottom: 15px;
+}
+.heading-bx {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.paragraph {
+  margin-left: 20px;
+}
+#com-icon {
+  margin-top: -12px;
+  width: 60px;
+  height: auto;
+  margin-left: 450px;
+}
+#ba-icon {
+  width: 70px;
+  height: auto;
+  margin-left: 450px;
+  margin-top: 5px;
+}
+#binocular {
+  width: 80px;
+  height: auto;
+  margin-left: 443px;
+  margin-top: -20px;
+}
+#smile-icon {
+  width: 60px;
+  height: auto;
+  margin-left: 450px;
+  margin-top: -13px;
+}
+#h1m {
+  color: white;
+  /* margin-left: 40px; */
+  margin-bottom: 100px;
+}
+.freqQ {
+  font-size: 24px;
+  margin-left: 50px;
+}
+#backg-faq,
+#backg-faq2,
+#backg-faq3,
+#backg-faq4,
+#backg-faq5,
+#backg-faq6 {
+  /* background-color: rgba(0, 0, 0, 0.952); */
+  background-color: #292828f2;
+  color: white;
+  font-size: 27px;
+  font-weight: 400;
+  padding: 25px 5px 25px 22px;
+}
+#backg-faq7,
+#backg-faq8,
+#backg-faq9,
+#backg-faq10,
+#backg-faq11,
+#backg-faq12 {
+  /* background-color: #3d3c3c; */
+  background-color: #292828f2;
+  color: white;
+  font-size: 27px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding: 25px 25px 25px 22px;
+}
+#backg-faq13,
+#backg-faq14,
+#backg-faq15,
+#backg-faq16,
+#backg-faq17,
+#backg-faq18 {
+  background-color: rgba(0, 0, 0, 0.952);
+}
+.accordion-header .accordion-button::after {
+  color: white; /* Change the arrow color */
+  filter: brightness(0) invert(1); /* Invert to make it white */
+}
+
+.accordion-header .accordion-button:not(.collapsed)::after {
+  color: white; /* Change the arrow color when expanded */
+  filter: brightness(0) invert(1); /* Invert to make it white */
+}
+
+/* Text color for the button */
+.accordion-header .accordion-button {
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color for the button */
+  border: none; /* Remove border */
+}
+
+.accordion-header .accordion-button:not(.collapsed) {
+  background-color: #0056b3; /* Darker shade when expanded */
+}
+
+.accordion-item {
+  border: none; /* Remove item border */
+}
+
+#faq {
+  margin-left: 50px;
+}
+.para-last {
+  margin-top: 70px;
+  font-size: 18px;
+  color: white;
+  z-index: 1;
+  text-align: center;
+}
+#bottom-con {
+  display: flex;
+  align-items: center;
+  position: relative; /*Gap ka use bhi kr skte hai*/
+  left: -52px;
+  margin-top: 6px;
+}
+#st-btn2 {
+  width: 175px;
+  height: 57px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #e5e5e5;
+  background-color: red;
+}
+#input2 {
+  color: inherit;
+  font-style: normal;
+  font-size: 16px;
+  width: 400px;
+  margin-left: 374px;
+  margin-right: 10px;
+  background: transparent;
+  /* border: 1px solid rgb(179, 177, 177); */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: rgba(0, 0, 0, 0.374);
+}
+#input2::placeholder {
+  color: rgb(179, 177, 177);
+  /* color: rgb(169, 168, 168); */
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 600;
+}
+#question {
+  margin-top: 60px;
+  color: rgb(189, 181, 181);
+  font-size: 16px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+#call {
+  text-decoration: underline;
+}
+.li {
+  display: flex;
+  color: rgb(189, 181, 181);
+  margin-left: 60px;
+  gap: -5px; /*yaha pe hr ek link k nich gap bn rha hai mere bhai halaki ye gap kaam nhi kr rha bec display flex krn se hi nich nich gap rha hai*/
+}
+.col-3 {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+#bot-btn {
+  margin-left: 55px;
+  margin-top: 10px;
+}
+#bot-net {
+  margin-top: 30px;
+  margin-left: 55px;
+}
+#net-ind {
+  font-size: 14px;
+  color: rgb(189, 181, 181);
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0 0 0;
+  }
+
+  .netflixLogo-img {
+    margin-bottom: 40px !important;
+  }
+
+  .btn-sign,
+  #btn-lang {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .hero {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .heading1 {
+    font-size: 26px;
+    line-height: 0.1;
+    margin-bottom: -5px;
+  }
+  .heading2 {
+    margin-bottom: 10px;
+  }
+
+  .para,
+  .para2 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .em-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #input,
+  #st-btn {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .img-col {
+    width: 90%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  #com-icon,
+  #ba-icon,
+  #binocular,
+  #smile-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+  }
+
+  #box-container,
+  #box-container2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  #bx1,
+  #bx2 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #bottom-con {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  #input2,
+  #st-btn2 {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .para-last {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+
+  .freqQ {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .accordion-button {
+    font-size: 16px;
+  }
+
+  .container-fluid {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+
+  footer {
+    padding-bottom: 40px;
+  }
+
+  #right-arr {
+    display: none;
+  }
+
+  .col-3 {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  #question {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .navbar span {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar img {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0 0 0;
+  }
+
+  .button {
+    text-align: center;
+    width: 100%;
+  }
+
+  .btn-sign {
+    margin: 10px auto;
+    display: block;
+    width: 100%;
+  }
+
+  #bot-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: -8px;
+  }
+
+  #bot-btn #btn-lang {
+    width: 80%;
+  }
+
+  .hero {
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .em-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #input {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  #st-btn {
+    width: 90%;
+    margin: 10px auto 0 auto;
+  }
+
+  .img-col {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .row.justify-content-center {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #right-arr {
+    display: none;
+  }
+
+  .row > .col-2 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    padding: 0 15px !important;
+    margin-bottom: 8px;
+  }
+
+  /* Fix dropdown sizing */
+  #trend-select,
+  #trend-sel {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+  }
+  #box-container,
+  #box-container2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  #bx1,
+  #bx2 {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  #com-icon,
+  #ba-icon,
+  #binocular,
+  #smile-icon {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #bottom-con {
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    position: static;
+  }
+
+  #input2 {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  #st-btn2 {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+
+  .col-3 {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  #question,
+  .para-last {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .freqQ {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+
+  #faq {
+    margin-left: 20px;
+  }
+
+  #trend-select,
+  #trend-sel {
+    width: 90% !important;
+    margin: 10px auto !important;
+    display: block;
+  }
+
+  .col-2 {
+    width: 100% !important;
+    flex: none !important;
+    padding: 0 15px;
+  }
+  .container-fluid {
+    min-height: 100vh;
+    height: auto !important;
+    background-color: rgba(0, 0, 0, 0.952);
+  }
+
+  .accordion-button {
+    font-size: 18px;
+  }
+
+  footer {
+    padding-bottom: 30px;
+  }
+}

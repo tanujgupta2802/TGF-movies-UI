@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix India - Watch TV shows or movies</title>
+    <link rel="stylesheet" type="text/css" href="B-netflix.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <nav class="navbar">
+        <span
+          ><img
+            class="netflixLogo-img"
+            style="color: red"
+            src="netflixlogo.svg"
+        /></span>
+        <div class="box">
+          <select
+            class="form-select"
+            id="btn-lang"
+            aria-label="Default select example"
+          >
+            <option selected class="opt">
+              <span class="gap">English</span> &#9662;
+            </option>
+            <option class="opt" value="1">
+              <span class="gap">Hindi</span> &#9662;
+            </option>
+            <option class="opt" value="2">
+              <span class="gap">Tamil</span> &#9662;
+            </option>
+            <option class="opt" value="3">
+              <span class="gap">Kannada</span> &#9662;
+            </option>
+          </select>
+          <div class="button">
+            <button class="btn-sign">Sign In</button>
+          </div>
+        </div>
+      </nav>
+      <div class="col hero">
+        <h1 class="heading1">Unlimited movies, TV</h1>
+        <br />
+        <h1 class="heading2">shows and more</h1>
+        <br />
+        <p class="para">Starts at ₹149. Cancel at any time.</p>
+        <p class="para2">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="em-btn">
+          <input
+            type="email"
+            id="input"
+            class="form-control justify-content-center"
+            id="exampleFormControlInput1"
+            placeholder="Email address"
+          />
+          <button type="button" class="btn btn-danger" id="st-btn">
+            <span class="g-st">Get Started</span>
+            <i class="bi bi-arrow-right-square"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <svg
+        class="curve"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+      >
+        <!-- Red Curve Line -->
+        <path
+          fill="none"
+          stroke="red"
+          stroke-width="5"
+          d="M0,50 C480,0 960,0 1440,50"
+        />
+
+        <!-- Blue Shadow Effect -->
+        <path
+          fill="none"
+          stroke="rgba(0, 0, 255, 0.7)"
+          stroke-width="10"
+          d="M0,55 C480,5 960,5 1440,55"
+        />
+      </svg>
+
+      <div class="row">
+        <div class="col-12">
+          <h1 class="cont-hd">Trending Now</h1>
+        </div>
+        <div class="col-2">
+          <select
+            class="form-select"
+            id="trend-select"
+            aria-label="Default select example"
+          >
+            <option selected class="opt">
+              <span class="gap2">Global</span> &#9662;
+            </option>
+            <option class="opt" value="1">
+              <span class="gap2">India</span> &#9662;
+            </option>
+          </select>
+        </div>
+        <div class="col-2" id="">
+          <select
+            class="form-select"
+            id="trend-sel"
+            aria-label="Default select example"
+          >
+            <option selected class="opt">
+              <span class="gap2">Movies</span> &#9662;
+            </option>
+            <option class="opt" value="1">
+              <span class="gap2">TV Shows</span> &#9662;
+            </option>
+          </select>
+        </div>
+      </div>
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-2">
+          <img
+            class="img-col"
+            src="https://m.media-amazon.com/images/M/MV5BZTAzODc1ZjUtNGQwZS00YTc2LTliNzQtMDdlNzllNmU5Yzk4XkEyXkFqcGc@._V1_.jpg"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            class="img-col"
+            src="https://resizing.flixster.com/605locTsNnzBH3COiClzgfZgQ_I=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzc5YWIzMDQ4LTZjNDAtNGVjYy1hNDYwLTZiZjhlY2RjM2JiMi5qcGc="
+          />
+        </div>
+        <div class="col-2">
+          <img
+            class="img-col"
+            src="https://resizing.flixster.com/2bpFxoybigCD78l_tMP4wE7m6j4=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2IwMmU1NmEwLTM0MzQtNDYzMC1iNWExLWFiMmNiMzRkNzcwZC5qcGc="
+          />
+        </div>
+        <div class="col-2">
+          <img
+            class="img-col"
+            src="https://m.media-amazon.com/images/M/MV5BYWIyZjA1M2YtOGIzNS00ZTUwLTkyMTctZTk4MWI5MjRhYzVhXkEyXkFqcGc@._V1_.jpg"
+          />
+        </div>
+        <div class="col-2">
+          <img
+            class="img-col"
+            id="last-img"
+            src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2023/11/en-us_lift_main_plane_vertical_9x16_rgb-1.jpg"
+          />
+        </div>
+        <div class="col-1" id="right-arr">
+          <i class="bi bi-arrow-bar-right" id="ri-array"></i>
+        </div>
+      </div>
+      <br />
+      <div class="row" id="reason">
+        <div class="col-12">
+          <h1 id="more-hd" class="cont-hd">More reasons to join</h1>
+        </div>
+      </div>
+      <br />
+      <div class="row" id="box-container">
+        <div class="col-5 col-md-6 col-lg-4" id="bx1">
+          <h3 class="heading-bx">Enjoy on your TV</h3>
+          <p class="paragraph">
+            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </p>
+          <img
+            id="com-icon"
+            src="https://static-00.iconduck.com/assets.00/computer-icon-1024x1024-q34qlzrf.png"
+          />
+        </div>
+        <div class="col-5 col-md-6 col-lg-4" id="bx2">
+          <h3 class="heading-bx">Download your shows to watch offline</h3>
+          <p class="paragraph">
+            Save your favourites easily and always have something to watch.
+          </p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Eo_circle_red_arrow-down.svg/768px-Eo_circle_red_arrow-down.svg.png?20200417172948"
+            id="ba-icon"
+          />
+        </div>
+      </div>
+      <div class="row" id="box-container2">
+        <div class="col-5 col-md-6 col-lg-4" id="bx1">
+          <h3 class="heading-bx">Watch everywhere</h3>
+          <p class="paragraph">
+            Stream unlimited movies and TV shows on your phone, tablet, laptop
+            and TV.
+          </p>
+          <img
+            src="https://png.pngtree.com/png-clipart/20231116/original/pngtree-movie-icon-tv-photo-png-image_13597737.png"
+            id="binocular"
+          />
+          <!-- <img src="https://cdn3d.iconscout.com/3d/premium/thumb/telescope-3d-icon-download-in-png-blend-fbx-gltf-file-formats--zoom-logo-astronomy-space-pack-editorial-icons-8502727.png?f=webp"  id="binocular"> -->
+        </div>
+        <div class="col-5 col-md-6 col-lg-4" id="bx2">
+          <h3 class="heading-bx">Create profiles for kids</h3>
+          <p class="paragraph">
+            Send kids on adventures with their favourite characters in a space
+            made just for them — free with your membership.
+          </p>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Smiley.svg/1200px-Smiley.svg.png"
+            id="smile-icon"
+          />
+        </div>
+      </div>
+      <div class="row" id="h1m">
+        <div class="col-12">
+          <h3 id="more-hd" class="freqQ">Frequently Asked Questions</h3>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-11" id="faq">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item" id="backg-faq13">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  id="backg-faq7"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  What is Netflix?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body" id="backg-faq">
+                  Netflix is a streaming service that offers a wide variety of
+                  award-winning TV shows, movies, anime, documentaries and more
+                  – on thousands of internet-connected devices.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" id="backg-faq14">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  id="backg-faq8"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  How much does Netflix cost?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body" id="backg-faq2">
+                  Watch Netflix on your smartphone, tablet, Smart TV, laptop, or
+                  streaming device, all for one fixed monthly fee. Plans range
+                  from ₹149 to ₹649 a month. No extra costs, no contracts.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" id="backg-faq15">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  id="backg-faq9"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Where can I watch?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body" id="backg-faq3">
+                  Watch anywhere, anytime. Sign in with your Netflix account to
+                  watch instantly on the web at netflix.com from your personal
+                  computer or on any internet-connected device that offers the
+                  Netflix app, including smart TVs, smartphones, tablets,
+                  streaming media players and game consoles.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" id="backg-faq16">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  id="backg-faq10"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  How do I cancel?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body" id="backg-faq4">
+                  Watch anywhere, anytime. Sign in with your Netflix account to
+                  watch instantly on the web at netflix.com from your personal
+                  computer or on any internet-connected device that offers the
+                  Netflix app, including smart TVs, smartphones, tablets,
+                  streaming media players and game consoles.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" id="backg-faq17">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  id="backg-faq11"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  What can I watch on Netflix?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body" id="backg-faq5">
+                  Netflix has an extensive library of feature films,
+                  documentaries, TV shows, anime, award-winning Netflix
+                  originals, and more. Watch as much as you want, anytime you
+                  want.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" id="backg-faq18">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  id="backg-faq12"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSix"
+                  style="color: white"
+                >
+                  Is Netflix good for kids?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body" id="backg-faq6">
+                  The Netflix Kids experience is included in your membership to
+                  give parents control while kids enjoy family-friendly TV shows
+                  and films in their own space.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <p class="para-last">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <div class="col-12" id="bottom-con">
+          <input
+            type="email"
+            id="input2"
+            class="form-control justify-content-center"
+            id="exampleFormControlInput1"
+            placeholder="Email address"
+          />
+          <button type="button" class="btn btn-danger" id="st-btn2">
+            <span class="g-st">Get Started</span>
+            <i class="bi bi-arrow-right-square"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <h3 id="question">
+          Questions? Call <span id="call">000-800-919-1694</span>
+        </h3>
+        <div class="col-3">
+          <p>
+            <a href="#" class="li text-decoration-underline">FAQ</a><br />
+            <a href="#" class="li text-decoration-underline">Media Centre</a
+            ><br />
+            <a href="#" class="li text-decoration-underline">Ways to Watch</a
+            ><br />
+            <a href="#" class="li text-decoration-underline"
+              >Cookie Preferences</a
+            ><br />
+            <a href="#" class="li text-decoration-underline">Speed Test</a>
+          </p>
+        </div>
+        <div class="col-3">
+          <p>
+            <a href="#" class="li text-decoration-underline">Help Centre</a
+            ><br />
+            <a href="#" class="li text-decoration-underline"
+              >Investor Relations</a
+            ><br />
+            <a href="#" class="li text-decoration-underline">Terms of Use</a
+            ><br />
+            <a href="#" class="li text-decoration-underline"
+              >Corporate Information</a
+            ><br />
+            <a href="#" class="li text-decoration-underline">legal Notices</a>
+          </p>
+        </div>
+        <div class="col-3">
+          <p>
+            <a href="#" class="li text-decoration-underline">Account</a><br />
+            <a href="#" class="li text-decoration-underline">Jobs</a><br />
+            <a href="#" class="li text-decoration-underline">Privacy</a><br />
+            <a href="#" class="li text-decoration-underline">Contact Us</a
+            ><br />
+            <a href="#" class="li text-decoration-underline">Only on Netflix</a>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12" id="bot-btn">
+          <select
+            class="form-select"
+            id="btn-lang"
+            aria-label="Default select example"
+          >
+            <option selected class="opt">
+              <span class="gap">English</span> &#9662;
+            </option>
+            <option class="opt" value="1">
+              <span class="gap">Hindi</span> &#9662;
+            </option>
+            <option class="opt" value="2">
+              <span class="gap">Tamil</span> &#9662;
+            </option>
+            <option class="opt" value="3">
+              <span class="gap">Kannada</span> &#9662;
+            </option>
+          </select>
+        </div>
+        <div class="col-12" id="bot-net">
+          <h3 id="net-ind">Netflix India</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-X8Y1FOxKFRudHf4TzO3V1eVmJ2yx0nF9VjZC6WeL5bO9mkJdb8T+ghbyQG9auSlN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybV6wDi5ccz5q2c8l4zRy2qkHFsW3PSSPi4w6glFokOKg3twN" crossorigin="anonymous"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

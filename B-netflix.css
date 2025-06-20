@@ -6,6 +6,7 @@
 body,
 html {
   height: 100%;
+  overflow-x: hidden;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 

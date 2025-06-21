@@ -19,7 +19,7 @@ body {
 
 /* Main background section */
 .main {
-  background-image: url("images/netflixbg.jpg"); /* Replace with your background */
+  background-image: url("images/bg.jpg"); /* Replace with your background */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

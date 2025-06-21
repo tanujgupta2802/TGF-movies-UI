@@ -19,7 +19,7 @@ body {
 
 /* Main background section */
 .main {
-  background-image: url("netflixbg.jpg"); /* Replace with your background */
+  background-image: url("images/netflixbg.jpg"); /* Replace with your background */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -236,7 +236,7 @@ In your case, ::before is used to create a dark overlay effect on top of the bac
 #bx2 {
   /* border: 1px solid white; */
   border-radius: 12px;
-  background-image: url("purback.jpg");
+  background-image: url("images/purback.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

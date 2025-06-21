@@ -43,7 +43,7 @@ All sections like navbar, hero, trending, FAQs, and footer are fully responsive.
 
 ## 🚀 Live Demo
 
-👉 **Check out the live version:** [TGF Movies on Netlify](https://tg369-u-i.netlify.app/)
+👉 **Check out the live version:** [TGF Movies on Netlify](https://tgf-movies-ui.netlify.app/)
 
 ---
 

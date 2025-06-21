@@ -1,7 +1,10 @@
-# Netflix UI Clone 🎬
+# 🎬 TGF Movies – A Netflix-Inspired UI Clone
 
-This is a **responsive clone of Netflix's landing page**, built using **HTML**, **CSS**, and **Bootstrap 5**.  
-It’s a simple front-end project that mimics the look and feel of the original Netflix homepage — no JavaScript frameworks used.
+This is a **responsive landing page UI** inspired by Netflix, built using **HTML**, **CSS**, and **Bootstrap 5**.  
+It mimics the look and structure of Netflix’s homepage — purely for learning and practice.
+
+> 🔒 **Disclaimer:** This project is not affiliated with or endorsed by Netflix.  
+> It is built for educational purposes only with no use of Netflix branding or assets.
 
 ---
 
@@ -9,58 +12,58 @@ It’s a simple front-end project that mimics the look and feel of the original 
 
 - ✅ HTML5  
 - ✅ CSS3  
-- ✅ Bootstrap 5 (for responsiveness & layout)
+- ✅ Bootstrap 5 (for responsiveness)
 
 ---
 
 ## 📱 Responsive Design
 
-This clone is **fully responsive** and adjusts beautifully across:
+This Netflix-style clone adjusts beautifully across:
 
 - 📱 Mobile Devices  
 - 💻 Tablets  
 - 🖥️ Desktops
 
-All sections — including the navbar, hero text, buttons, trending images, and FAQs — scale properly for different screen sizes.
+All sections like navbar, hero, trending, FAQs, and footer are fully responsive.
 
 ---
 
 ## 💡 Features
 
-- Netflix-style layout and structure  
-- Background overlay with hero text  
-- Email input + "Get Started" button  
-- Trending section with images  
-- Language and category dropdowns  
-- FAQ accordion section (Bootstrap powered)  
-- Footer with quick links  
-- Fully mobile-friendly
+- Netflix-like layout  
+- Background image with overlay + hero text  
+- Email input and CTA button  
+- Trending section with hover effects  
+- Language & category dropdowns  
+- FAQ (accordion powered by Bootstrap)  
+- Footer with links  
+- Mobile-friendly responsiveness
 
 ---
 
 ## 🚀 Live Demo
 
-👉 **Check out the live site here:** [Your Netlify Link Here](https://tg369-u-i.netlify.app/)
+👉 **Check out the live version:** [TGF Movies on Netlify](https://tg369-u-i.netlify.app/)
 
 ---
 
 ## 🤝 Contributing
 
-This is a beginner-friendly project — feel free to fork and play around!
+This project is beginner-friendly.  
+Fork it, clone it, and make your own modifications!
 
 ---
 
-## 📸 Preview
+## 📸 UI Preview
 
-![Netflix Clone Screenshot](https://github.com/user-attachments/assets/368c7d9f-7220-42f8-ae98-c36dc46d99f6)
-
+![TGF Movies Screenshot](https://github.com/user-attachments/assets/368c7d9f-7220-42f8-ae98-c36dc46d99f6)
 
 ---
 
 ## 📌 Note
 
-This is a front-end clone created for learning and educational purposes only.  
-All rights to the original design and branding belong to [Netflix](https://www.netflix.com).
+This UI project was created for educational use only.  
+No copyrighted content or official branding from Netflix is used.
 
 ---
 

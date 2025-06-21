@@ -56,7 +56,7 @@ Fork it, clone it, and make your own modifications!
 
 ## 📸 UI Preview
 
-![TGF Movies Screenshot](https://github.com/user-attachments/assets/368c7d9f-7220-42f8-ae98-c36dc46d99f6)
+![TGF Movies Screenshot](https://github.com/user-attachments/assets/4eda46f6-70cb-45a3-aa3f-a03a1924d36a)
 
 ---
 

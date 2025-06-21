@@ -60,6 +60,20 @@ In your case, ::before is used to create a dark overlay effect on top of the bac
   margin-top: 12px;
   margin-left: 80px;
 }
+.center-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+}
+
+.logo-text {
+  color: red;
+  font-size: 38px;
+  font-weight: bold;
+}
+
 #btn-lang,
 .btn-sign {
   font-weight: 550;

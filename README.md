@@ -12,7 +12,7 @@ It mimics the look and structure of Netflix’s homepage — purely for learning
 
 - ✅ HTML5  
 - ✅ CSS3  
-- ✅ Bootstrap 5 (for responsiveness)
+- ✅ Bootstrap 5
 
 ---
 

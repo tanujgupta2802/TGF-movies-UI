@@ -444,6 +444,21 @@ In your case, ::before is used to create a dark overlay effect on top of the bac
   color: rgb(189, 181, 181);
 }
 
+.disclaimer-box {
+  background-color: #111;
+  padding: 15px;
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid #444;
+}
+
+.disclaimer-text {
+  color: #ccc;
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
 /* Mobile Responsive Fix */
 @media (max-width: 768px) {
   .navbar {
